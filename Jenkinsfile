@@ -9,7 +9,7 @@
       steps {
         script {
 //            git credentialsId: '	git.repo.passward', url : component_url
-          sh " git clone credentialsId: 'git_credentials' url: component_url "
+          git branch: 'feature/0001', credentialsId: 'git_credentials', url: component_url
            echo "clone the repo .........."
           }
        }
