@@ -14,7 +14,7 @@
       steps {
         script {
 //            git credentialsId: 'git.repo.passward', url : component_url
-         git branch: '${parms.branch}', credentialsId: 'git_credentials', url: component_url
+         git branch: '${params.branch}', credentialsId: 'git_credentials', url: component_url
            echo "clone the repo .........."
           }
        }
