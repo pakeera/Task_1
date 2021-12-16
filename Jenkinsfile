@@ -4,7 +4,7 @@ pipeline {
     stage('Checkout') {
       steps {
         script {
-           git credentialsId: 'jenkins-user-github', url: 'https://github.com/pakeera/Task_1.git'
+           git credentialsId: '9dd54130-c5cf-41cc-b4f9-cfaf8f9a94ae', url: 'https://github.com/pakeera/Task_1.git'
           
           }
        }
