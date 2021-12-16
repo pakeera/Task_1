@@ -1,4 +1,4 @@
- pipeline {
+pipeline {
    agent any
    environment{
    component_url = "https://github.com/pakeera/Task_1.git"
@@ -20,9 +20,12 @@
        }
     }
       stage ('Build') { 
-                steps { 
-                    echo "Building ........." 
+        steps{
+                withMaven {
+		    sh "mvn clean install"
+                    echo "Build is successfull ........." 
                 }
             }
+      }
   }
 }
