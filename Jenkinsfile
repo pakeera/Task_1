@@ -5,7 +5,7 @@
     git_credentials = credentials('	git.repo.passward')
    }
   parameters{
-  string(name: 'branch', defaultvalue: 'feature/0001', description: 'enter the branch name')
+  string(name: 'branch', defaultValue: 'feature/0001', description: 'enter the branch name')
    
   }
   
