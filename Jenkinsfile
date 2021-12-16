@@ -3,7 +3,7 @@ pipeline {
         stages { 
             stage('clone'){
                  steps{
-                     git clone "https://github.com/pakeera/Task_1.git"
+                     @git clone (https://github.com/pakeera/Task_1.git)
                     echo "reo got cloned"
                 }
              }
