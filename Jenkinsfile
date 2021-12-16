@@ -3,7 +3,7 @@ pipeline {
         stages { 
             stage('clone'){
                  steps{
-                    git clone //github.com/pakeera/helloworld.git
+                    git clone github.com/pakeera/Task_1.git
                     echo "reop"
                 }
              }
