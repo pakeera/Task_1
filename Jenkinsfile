@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
    agent any
    environment{
    component_url = "https://github.com/pakeera/Task_1.git"
@@ -9,7 +9,7 @@ pipeline {
       steps {
         script {
 //            git credentialsId: '	git.repo.passward', url : component_url
-           git clone url : component_url
+          sh " git clone url : component_url "
            echo "clone the repo .........."
           }
        }
