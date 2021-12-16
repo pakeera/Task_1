@@ -2,7 +2,7 @@
    agent any
    environment{
    component_url = "https://github.com/pakeera/Task_1.git"
-    git_credentials = credentials('	git.repo.passward')
+    git_credentials = credentials('git.repo.passward')
    }
   parameters{
   string(name: 'branch', defaultValue: 'feature/0001', description: 'enter the branch name')
