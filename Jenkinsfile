@@ -4,7 +4,7 @@ pipeline {
             stage('clone'){
                  steps{
                     git clone github.com/pakeera/Task_1.git
-                    echo "reop"
+                    echo "reo got cloned"
                 }
              }
             stage ('Build') { 
