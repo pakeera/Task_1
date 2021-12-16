@@ -1,16 +1,13 @@
-pipeline { 
-    agent any 
-        stages { 
-            stage('clone'){
-                 steps{
-                     git clone //github.com/pakeera/Task_1.git
-                    echo "reo got cloned"
-                }
-             }
-            stage ('Build') { 
-                steps { 
-                    echo "Running build phase." 
-                }
-            }
-        }
+pipeline {
+   agent any
+   stages {
+    stage('Checkout') {
+      steps {
+        script {
+           git credentialsId: 'jenkins-user-github', url: 'https://github.com/pakeera/Task_1.git'
+          
+          }
+       }
     }
+  }
+}
