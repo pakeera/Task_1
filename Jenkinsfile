@@ -8,7 +8,8 @@ pipeline {
     stage('clone') {
       steps {
         script {
-           git credentialsId: '	git.repo.passward', url : component_url
+//            git credentialsId: '	git.repo.passward', url : component_url
+           git clone url : component_url
            echo "clone the repo .........."
           }
        }
